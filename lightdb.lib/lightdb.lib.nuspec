@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>lightdb.lib</id>
+    <version>1.1.3</version>
+    <authors>lightdb.lib</authors>
+    <owners>lightdb.lib</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/lightszero/lightdb.lib</projectUrl>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Reflection.Emit" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="lightdb.struct.lib" version="1.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netstandard2.0/libsnappy.so.1.1.5" buildAction="Content" copyToOutput="true"/>
+      <files include="any/netstandard2.0/native/librocksdb-5.17.0.so" buildAction="Content" copyToOutput="true"/>
+      <files include="any/netstandard2.0/native/libsnappy.so.1.1.5" buildAction="Content" copyToOutput="true"/>
+      <files include="any/netstandard2.0/native/rocksdb-5.17.0.dll" buildAction="Content" copyToOutput="true"/>
+    </contentFiles>
+  </metadata>
+</package>
